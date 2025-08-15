@@ -19,14 +19,47 @@ Eine innovative, interaktive und futuristische Web-App für das PILGRIM-8 Konzep
 - **TypeScript** für Type Safety
 - **Tailwind CSS** für modernes Styling
 - **Framer Motion** für flüssige Animationen
+- **Three.js** für 3D-Visualisierungen
+- **AI-Integration** mit Gemini, DeepSeek und Pollinations APIs
 - **Responsive Design** für alle Geräte
 - **Futuristisches UI/UX** mit Glasmorphismus und Neon-Effekten
 
+## 🤖 AI-Features
+
+### Gemini AI Chatbot
+- Intelligenter Assistent für alle PILGRIM-8 Fragen
+- Kontextbewusste Antworten und Hilfestellung
+- Markdown-Unterstützung und Schnellfragen
+
+### DeepSeek AI Integration
+- **Governance**: Automatische Analyse von Vorschlägen
+- **KARMA-System**: Intelligente Bewertung von Aktionen
+- Transparente AI-Erklärungen und Bewertungen
+
+### Pollinations AI
+- Dynamische Bildgenerierung für Pilger-Profile
+- Multimediale Geschichtenerstellung
+- Personalisierte visuelle Inhalte
+
+### 3D Interaktive Weltkarte
+- Three.js-basierte Globus-Visualisierung
+- Interaktive Pilgerwege und Standorte
+- Echtzeit-Statistiken und Animationen
+
 ## 🚀 Installation & Start
 
+### Schnellstart
 ```bash
+# Repository klonen
+git clone https://github.com/herrusername/pilgrim-8-webapp.git
+cd pilgrim-8-webapp
+
 # Dependencies installieren
 npm install
+
+# Umgebungsvariablen konfigurieren (optional)
+cp .env.example .env.local
+# API-Schlüssel in .env.local eintragen
 
 # Development Server starten
 npm run dev
@@ -37,6 +70,15 @@ npm start
 ```
 
 Die Anwendung läuft auf: `http://localhost:12000`
+
+### API-Konfiguration (Optional)
+Für vollständige AI-Funktionalität fügen Sie API-Schlüssel in `.env.local` hinzu:
+```env
+NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key_here
+NEXT_PUBLIC_DEEPSEEK_API_KEY=your_deepseek_api_key_here
+```
+
+**Hinweis:** Die App funktioniert auch ohne API-Schlüssel mit Mock-Daten.
 
 ## 🎨 Design-Konzept
 

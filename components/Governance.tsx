@@ -1,12 +1,17 @@
 'use client'
 
 import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { Users, Brain, Vote, Shield, Globe, Zap, CheckCircle, Clock } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Users, Brain, Vote, Shield, Globe, Zap, CheckCircle, Clock, MessageSquare, TrendingUp, Lightbulb, Target } from 'lucide-react'
+import { deepSeekService } from '../lib/ai-services'
 
 export default function Governance() {
   const [selectedProposal, setSelectedProposal] = useState<number | null>(null)
   const [votingPower, setVotingPower] = useState(1247)
+  const [newProposal, setNewProposal] = useState('')
+  const [isAnalyzing, setIsAnalyzing] = useState(false)
+  const [showNewProposalForm, setShowNewProposalForm] = useState(false)
+  const [proposals, setProposals] = useState(activeProposals)
 
   const councilMembers = [
     { type: 'human', name: 'Dr. Elena Vasquez', region: 'Europa', expertise: 'Klimawissenschaft' },

@@ -28,7 +28,15 @@
     "d3": "^7.8.0",
     "@types/d3": "^7.4.0",
     "lucide-react": "^0.292.0",
-    "recharts": "^2.8.0"
+    "recharts": "^2.8.0",
+    "@google/generative-ai": "^0.2.1",
+    "three-globe": "^2.30.0",
+    "axios": "^1.6.2",
+    "react-markdown": "^9.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "uuid": "^9.0.1",
+    "date-fns": "^2.30.0",
+    "@types/uuid": "^9.0.7"
   },
   "devDependencies": {
     "eslint": "^8.0.0",

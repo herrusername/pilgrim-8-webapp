@@ -6,11 +6,13 @@ import Navigation from '@/components/Navigation'
 import HeroSection from '@/components/HeroSection'
 import VisionSection from '@/components/VisionSection'
 import SystemsOverview from '@/components/SystemsOverview'
-import InteractiveMap from '@/components/InteractiveMap'
-import KarmaSystem from '@/components/KarmaSystem'
+import Interactive3DMap from '@/components/Interactive3DMap'
+import KarmaSystemEnhanced from '@/components/KarmaSystemEnhanced'
 import GaiaOS from '@/components/GaiaOS'
 import Timeline from '@/components/Timeline'
-import Governance from '@/components/Governance'
+import GovernanceEnhanced from '@/components/GovernanceEnhanced'
+import PilgrimProfiles from '@/components/PilgrimProfiles'
+import Chatbot from '@/components/Chatbot'
 import ParticleBackground from '@/components/ParticleBackground'
 
 export default function Home() {
@@ -26,11 +28,12 @@ export default function Home() {
     { id: 'hero', component: HeroSection },
     { id: 'vision', component: VisionSection },
     { id: 'systems', component: SystemsOverview },
-    { id: 'map', component: InteractiveMap },
-    { id: 'karma', component: KarmaSystem },
+    { id: 'map', component: Interactive3DMap },
+    { id: 'profiles', component: PilgrimProfiles },
+    { id: 'karma', component: KarmaSystemEnhanced },
     { id: 'gaia', component: GaiaOS },
     { id: 'timeline', component: Timeline },
-    { id: 'governance', component: Governance },
+    { id: 'governance', component: GovernanceEnhanced },
   ]
 
   if (isLoading) {
@@ -83,6 +86,9 @@ export default function Home() {
           )
         ))}
       </AnimatePresence>
+      
+      {/* AI Chatbot - Always visible */}
+      <Chatbot />
     </main>
   )
 }
